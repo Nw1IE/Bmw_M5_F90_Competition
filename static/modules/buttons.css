@@ -1,0 +1,46 @@
+/* Основная M-кнопка */
+.btn-m {
+    position: relative;
+    display: inline-block;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.8); 
+    color: #fff !important; 
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+.btn-m:hover {
+    background: #fff;
+    color: #000 !important;
+    border-color: #fff;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+    transform: translateY(-5px);
+}
+
+/* Кнопка запуска V8 */
+.m-trigger-btn {
+    padding: 20px 40px;
+    background: white;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    z-index: 100;
+    will-change: transform, background-color; 
+}
+
+.m-trigger-btn.active {
+    transform: translateY(30vh);
+    background: rgba(220, 38, 38, 0.9); 
+    color: white;
+    box-shadow: 0 0 50px rgba(220, 38, 38, 0.4);
+}

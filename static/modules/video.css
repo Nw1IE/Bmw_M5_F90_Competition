@@ -1,0 +1,15 @@
+.video-running { opacity: 0.8 !important; }
+.overlay-clear { background-color: rgba(0, 0, 0, 0.2) !important; }
+
+.modal-spec-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(to right, transparent 0%, black 40%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%);
+}
+
+/* Привязка картинок */
+[data-modal-type="power"] .modal-spec-image { background-image: url('/img/Engine.png'); }
+[data-modal-type="accel"] .modal-spec-image { background-image: url('/img/Speed.png'); }
+[data-modal-type="speed"] .modal-spec-image { background-image: url('/img/MaxSpeed.png'); }

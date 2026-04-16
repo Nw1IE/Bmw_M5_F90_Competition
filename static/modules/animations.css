@@ -1,0 +1,18 @@
+@keyframes breath-sync {
+    0%, 100% { transform: scale(1); text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); opacity: 0.95; }
+    50% { transform: scale(1.04); text-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 1); opacity: 1; }
+}
+
+@keyframes breath-sync-color {
+    0%, 100% { transform: scale(1); text-shadow: 0 0 10px rgba(29, 78, 216, 0.3); opacity: 0.9; }
+    50% { transform: scale(1.04); text-shadow: 0 0 25px rgba(29, 78, 216, 0.6), 0 0 10px rgba(210, 0, 25, 0.3); opacity: 1; }
+}
+
+@keyframes breath-m-power {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.15); opacity: 0.8; }
+}
+
+@keyframes shine {
+    to { background-position: 200% center; }
+}
