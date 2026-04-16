@@ -22,7 +22,7 @@ async fn main() {
     tera.add_raw_template("index.html", include_str!("../templates/index.html")).unwrap();
 
     let app = Router::new()
-        // Раздаем папку static по пути /static
+        // Раздаем папку static
         .nest_service("/static", ServeDir::new("static"))
         .route("/", get(render_index));
 
