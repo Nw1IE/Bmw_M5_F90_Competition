@@ -39,4 +39,4 @@
 
 1. **Клонирование репозитория**
    ```bash
-   git clone [https://github.com/Nw1IE/Bmw_M5_F90_Competition/tree/main]
+   git clone https://github.com/Nw1IE/Bmw_M5_F90_Competition/tree/main
