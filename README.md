@@ -1,10 +1,10 @@
-# BMW M5 F90 Competition | Landing Page
+# BMW M5 F90 Competition
 
 <p align="center">
 <img src='img/f90.png' alt="player" width="500" height="300">
 </p>
 
-## 🏎 О проекте
+## О проекте
 Стильный и современный лендинг, посвященный эталону немецкого автопрома — **BMW M5 F90 Competition**. Проект выполнен с акцентом на визуальную эстетику («wow-effect»), плавность работы и строгий темный дизайн.
 
 > **Status:** Completed / Under Optimization 🚀
