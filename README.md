@@ -34,8 +34,3 @@
 1. **Клонирование репозитория**
    ```bash
    git clone [https://github.com/Nw1IE/Bmw_M5_F90_Competition.git](https://github.com/Nw1IE/Bmw_M5_F90_Competition.git)
-
-
-<p align="center">
-<img src='img/f901.png' alt="player" width="500" height="300">
-</p>
