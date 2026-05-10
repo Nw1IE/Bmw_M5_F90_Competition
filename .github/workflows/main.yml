@@ -2,30 +2,34 @@ name: CI
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    default:
+      run:
+        working-directory: m5_landing
+
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Project Structure Check
+      - name: Setup main.rs
         run: |
           echo "Проверка структуры проекта..."
           if [ ! -f "index.html" ]; then
-            echo "Ошибка: Главный файл index.html не найден!"
+            echo "Ошибка: Файл index.html не найден!"
             exit 1
           fi
-          echo "Главный файл на месте. Проект готов к развертыванию."
+          echo "Файл на месте. Проект готов к развертыванию."
 
-      - name: HTML Validation Test
+      - name: Test
         run: |
-          echo "Запуск тестов кода..."
+          echo "Запуск тестов"
           # Простая проверка на наличие базовой разметки
           grep -q "<!DOCTYPE html>" index.html && grep -q "</html>" index.html
           if [ $? -eq 0 ]; then
@@ -35,10 +39,10 @@ jobs:
             exit 1
           fi
 
-      - name: Success Notification
+      - name: Yes
         if: success()
-        run: echo "Статус: ЗЕЛЕНЫЙ. Все проверки пройдены, проект стабилен."
+        run: echo "Статус: Green. Все проверки пройдены, проект стабилен."
 
-      - name: Failure Notification
+      - name: No
         if: failure()
-        run: echo "Статус: КРАСНЫЙ. Обнаружены ошибки в коде или структуре!"
+        run: echo "Статус: Rrd. Обнаружены ошибки в коде или структуре!"
